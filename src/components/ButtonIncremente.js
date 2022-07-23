@@ -1,3 +1,5 @@
+import image_more from '../assets/image_more.svg';
+
 const Button = (props) => {
   console.log(props);
   return (
@@ -7,7 +9,7 @@ const Button = (props) => {
         props.setCounter(props.counter + 1);
       }}
     >
-      Plus
+      <img src={image_more} alt='image_for_more'></img>
     </button>
   );
 };

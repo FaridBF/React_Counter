@@ -1,3 +1,5 @@
+import image_less from '../assets/image_less.svg';
+
 const Button = (props) => {
   console.log(props);
   return (
@@ -7,10 +9,9 @@ const Button = (props) => {
         if (props.counter > 0) {
           props.setCounter(props.counter - 1);
         }
-        // props.setCounter(props.counter - 1);
       }}
     >
-      Moins
+      <img src={image_less} alt='image_for_less'></img>
     </button>
   );
 };
